@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Steve Job tribute page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+<body>
+<main id="main">
+	<h1 id="title">Steve Jobs</h1>
+	<p id="tribute-info">The man that was the the Ceo of apple.</p>
+
+	<figure id="img-div">
+		<img id="image" src=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATEhUSEhIVFRUVFRgXFhcWFhUVFxYVFxgWFhYVGBgYHSggGBolGxUVIjEhJSkrLi4vFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALYBFQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgIDBAUHAQj/xAA8EAACAQIEAwYDBgUDBQEAAAABAgADEQQFEiExQVEGEyJhgZEHMnEUobHB4fAjUmJy0UKS8QgVFkOCJP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDhsREBERAREQERLtCgWNh7wLUuJQY8B+U2NPCqvK5/CVvTbpAwHwTjofobywyEcRNj3DT3uzA1cTPrYQHhsekwWUg2MDyIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgXcPSLMB7/SSHLMvaq4SmPrtw85i5dhCF4bm151jsLkumlrI3ff05QI1/wCL6V2G/O8xn7P1CT4en33nX6eUjjaX0yZeQgcYOQsGs6kffPf+yi/ATruOyhSLFfW3CaA5GRc2gcwzTJrbrtI/Xw+oWOzfvadPznB2uLSDZlhrE25QIqRPJn5nQsdY4Hj9ZgQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEu4WnqdV6kS1LuFBLqB/MPxECZYfDGwUjfpz9TO45FhAKaDoAPunLspwF6mxuVAJ22vdbC3qJ2DJU8C/SBs6NLaXxREqprLhEDXV6I3mur0xYzdVE4zW5hR8BA4mBz3tOLGc+zgf6rTpue5de9zz6znubUx4h04e8CPNSVqbKfr7fsSNyXVE0sV5W28uP5gyJGB5ERAREQEREBERAREQEREBERAREQEREBERAREQEREBN92RwSvWDMbaT4Ra9247nkBxmhkx+HFdFqsz8EGoc9yNP4EwJv2dxCio91Nwf9WwJ1KoI9T906zk1KyLfjbeclwFSm+KVqBLUlKmpcWIClW3/ALTf0E6bjsOWp7VWpWF1deX1HAj6wJKgnpInLj21q4ZTesMSq3JZKLsNKkAktqUC2pb8bXG822V9vqda38NhcdOvl/i/1gTYsJi4wj85hpVcJrYWFibSDZ58QE16KQvpNiSCRfkABux8oEizOhqVtIvfy+/75yjtHhyjcOf4zbVe2zvdWZ01Le3dsp0m9mABtbY73kezStUIDag6MeIvx6EE7H9ehgabG19lY8tj6SO5hRAYsosrEkA7234X5zfYmmLm/Pcfv6zV54w8CjoT7/8AEDVREQEREBERAREQERJH8P8Asu2Y42nhgxVDd6rC11pr8xF+ZJCjzYQI5Ov/AAk7L5fTwlTNsy0GmrMtJaling4to/8AY5a6qtjw4EkW7Jl3YnLKNLuUwVArax101dm82ZgSx+ssYD4fZTRc1EwdPUTcB9VRVPPQjkqn/wAgQPlPP8euIxNauqBFqVXdUAACqzEqthtsLCa+d++OhyejRFJsKv2uopakaIWk1MAkB6jAeJL6hpIN7G2niOAwEREBERAREQEREBERASRdhqw+090TYVkanfkG+ZT7rb1kdmVleK7qtTqfyOregIJ+6B9B9m8OFKKyBWFMoy2HJiDf6giTLD4O6LRqLrXTYsPlK3bSGub3sqg+ZMiVXGIWpV6dijrquOBBF+PpJnleM1Jx4QMbM+zmFqUlptRTQjakGmwVuq6SLTWUMjpIzMtLgoC22vbgAD5X3kpeoSOH+JYW2rf92/WBg413OFGo6GKXNl4bfJY3vbgfpynHMoyul9pVmZjvq8IIKvcG5635W5KJ3LNVvQawubHj5gzjOXYmmmI7onxX8J5Hfh7wJVi+yuGOp1CAvufCePM6b2v6c5Ea/ZxqdN2INr2UEcRuSxPLgPedRoYwBL+E+okM7Z5yO6IBvfiRsB5KDv6npy5hzWug8VxwG3lIxnJ/iW6KB+JkmpnUG57D8b/4kTzGtrqM3U/htAxoiICIiAiIgIiICdU/6dKyjMqqm13wrhTzuKlJiB6An0nK5uex+fPgcZRxSi/dv4l/mQ+F1+pUm3naB9lRMXK8wpYiklei4enUUMjDmD+B5EciJlQPn3/qPy6p9qw+I0N3Zoil3m2nWr1HCdQ1mJ34324G3Hp9YfFjNMHh8vd8TSp1je1CnUAYNXsQhseS3JPkD1nyfAREQEREBERAREQEREBERA6Z8JsfUqCthmclVQMgO4Xchre/DzM7DkJ0jSeW2/Ubfp6T507B50MLjEqMbI10b6NwPvafROWv4Qf5jt77fThf1gSUDaUU021W2HAcz5zGxeLVEuSLGampn10uDYbf7W4f5gbnHV07l7ki4v0I43nztXzJe+Ap/Mr3Dfv8JNs9zWqQU1MyOzbW33FyPpvyPIznuJy0UqrWP6b3veB1nDZgDRB21WuZz7tJjCzlV3B2t0P+ZcyvOyfAovbcne44Dbrz28pYrULiozC2/hO/Pfj0II9/KBH81xDUqZ0ndtifI/8AEjE33aarfSOpJmhgIiICIiAiIgIiICJ0fLsHhcXRwgpJS7im+FpY2mKK08UtSo3dmqK5BNSnUcnYNdQVGkcZSexmAd67muaFL7VXw9HvK2HTuzRVSzv3jBqqaqiKFXxAbk8AQjWQ9tcywdNqWFxT00Y3K2VgCeJXWDpPmLSnCdtM0p1O9XHYjXe92qu4P1ViVI8iJIsF8P6VXuWWuwTFfZFw7EKfHW7w4kNwv3fcVRYWuSg5yP8AavKMNQ7o4eqHFRWLIatCs9JlYganoEoQy6WHMXI5XgYvaHtHjMa4qYuu1VlFlvYBRz0qoCi/Ow3tNTOl5n2WwRdKtXXTpucDhkTDqgIrVsJSqvVcEWI8V7DdiTuJfr9k8M1LCYKozLiL5hTSpTVO7Z8PWqeKqT4mU6LC3yjfygctiSHtHklGjQw9agzVUqr46uqm1PvdFN3pBV8VJ0LkFX3Isw2Mj0BERAREQEREBERAREQE7h8Ne0ne4TS5Ouj4T5jip6D9DOHyXfDbEoMQ1Kp8lVLHnuDsbc+Jgdsx+OFeiq0vEWIXY3AJtz8r8+k2eE7OYZFsdRJHiYu3iPNiL8SSfeR/KK2lwAb6QbEaFW22+4H5esl4rK4CuPmBPPh9YEdzDAZet7sdv6n+vNhID2lyfCAXptcG5I8xcm+5vv5yeY/s5RYH+I17kkEBrnz22G8iGJyMNUA1BgBvbYD98bQNLk9BaatUAFkU7/3Ai/peYuNxq1BZdgDw5WUAA9eX3CbXtLpoUalANZjYgqbjmLHmu31/GQavjyq6BxNr+X7vA1mc1C1U35AAfTj+cwZlYhtZJvv+XCYxEDyIiAiIgIiICIiBt6/afGvSp0TXbu6egoqhUsaYtTJKgFio4Ek2l7/zDH6qrGuSa5DVAUplWcLo1hStlfTtqABPWaKIEz/7XixTpIMX4cM1R6IW4NN9SszJbcHYOenhtcm0sVsRjqmM1PVXvaHeaX7ujYaAWLOiC1jq+Yg3vzO0ius9T+9/xgOeNzAm9fF5lh61dxjT3lTU1Qlb6mo06dRTZgQjBahCkWK6drXEj9HtVjkomguIcUyrrp2O1QlqlmI1DUWNyDvex2mnvPIGxzLPMTXRKdWpqSn8igKoBsFJsoF2sqjUbnYTXREBERAREQEREBERARE9AgeTddj8SKeLpO3yg2Y9AwK39yJgUsEeLbeXOZoUBdIFv2IHaWqNSK1UAdRclb+tx5f8ibyhnP2hFWhu5tsCAyiw1FgeE4z2f7Z18MAjgVaY4BiQyjordPI/dOq9h8w7/wD/AE0KLCmx0uWAUi1ydP8APYne23HmLQNiMtc6vtLlLgadO41cd25Dy53nN6PamktMh/CwdtQvuCHuAvnsfcdJ3V6CVF6gica+KHw4YM2KwtiTu9Lmf6k8/L26QOc57nbVqrPfYnbrbgJpXqGUve5B2txHnKYFQlxXMtrLiLAd0Dw2lD0SJkAStYGBEyKqCWikCiJ6RPICIiAm5yrIGr09aVF1a2Ug8EVU166hBuoaxAspBIIuJppKeytCrUp6KWIem3f0/CtrKrslM1W51AC6jQOFwTsSQGuxPZvEpTNVlUKEFQ+IAhWJVbg77sGA66TM3H9isUlQqul13swZRey13O1zYgYart5DrMrG4DGvhiz4hHRkFRrs2vRTVqiggj5b1kPm2IQnjcbI5Vj2W9DGsQ1JGqamqC+qnSq1CLJ8oGMTb5m1NYcRA0Q7D47Vo007k2X+LT8Ruqtpsd9LOoPTUJrM0yarQCNU06al9BVg4YBUYkEbEfxAL9QRyMnQwOYU6RQYkd7UKgsz1DY68U6ilv8AM32YEeDVd7bSL9tcBUo1KVNnD01plaNgRZVqOHDAj5+81kncHVseQCOREQEREBERAREQES/RwxbfgOp/LrM2lRVeA36nj+kDEo4Unc7D7zMxUVeAhjPVF4HqNcy4RLKiX1bygY7j2n0d8NTfLcMDTamVp6CrqVN1JGoAjcN8wPO85F8PchqV8XSqd0Wo06l3crdA4F6am/E6tGwv52vO/UKAUki97b3J8Xvt7dYFyk60yRqtfex69R+/10/bXMEWjYWL/wCnyMxe0eZeKmqix689uMi+Y5mr3G5tt7iByrtlh+8r1KtNbgAF7exa3QGwJ8xIzaTfM7o+peQsehBFiPaQ7E0grEDhxH0PCBbUTIQSysyacD0Ce2ldp5AtlZSUl2emBjsktlR0mQwlmpAtMg5GW5dfYS1AS/SxdRRpV2VbhrBiBqHBrA8R1liIGW+Z12Uo1RmDAA6iW2B1AXO4FwDYbEgdBKEx1YCwqOBdWsGYeJAAh48QALHlaY8QMpcwri5FWoCb3s7b31Xvvz1N/uPWWatd2+Zi1upJ4m54+ctzKy7ErTfUy6hpYW2HEEceX1EDFntpu2zbDE3+yrxvxAt4ieAFiLHhbl0lOFzaiq2NAE+KxuNtRbYAg7AEDeBpYmVmFdHa6UxTFraQbi9z+nt6DFgIiIFSISbAXMyqVFRx8R+79ZUihRYceZ6+Q8pUogVkkneXRKVEEwPQJcRZRPUeBWBKpbZpadzA+j/h3gkTLcOBaxQOf7nPeH72PtM3NMyYFVAA5X/L1kC+H3asNglo6tL0fARztc6CB0It6gzdOWbxE/SBXjWDtq5+fn0mgxuGCm4vbebh7k7zCx7X9IEJz+huZC8yo2N/3b93950rM6FwT6nzkFz6gbE9IGiSZSCYitMim8DItPLQrT28CkykmemUmB45locfISp+nMwwsIFmqZZlx5bgIiICIiAiIgIiICIiAiIgZwl1JQoldOBcEAT1ZXAoIlIlwrKQIHlpSRLtpQIGbk2OehUDpy2ZeTrtdT7eh3nTMuzA1EWpTN0br8yHmrdCJygNNnkGeVMM5ZfEjW1p1/qXow+/geVg6qlW/GXK1IEcOXSYuSY+jiEFSm1wR6g8wRyM3NXAXsbmBG8TgwQb+34SJZvl5YEWtcTqGJwQA5efMzR4vDrwtA4ZVplWKkWINp7TaSvttkxQ96o/u5yIiBnI0rvLFJtpeQQKrSgnnyErc7THqtygVUlubyisZfGyzEG5gePwlmZVdbCYsBERAREQEREBERAREQEREDPUy6s9iBWsupEQEAREAVlsCIgCs8prxiIGf2bzl8JUNVd1O1Rf5l6j+ocQfTnO84J7oG6gf54coiBfxFAGavF4YbAREDQZzlaurKeY/ScVzLDd3UZOhiIHmGmVeIgUvtvLVIXYRECrGtylGGTnPYgK+4mHEQEREBERAREQEREBERAREQP/2Q== alt="Steve Jobs in black and whitw with his lifespand">
+		<figcaption id="img-caption">Steves Jobs was the Ceo of apple when he was alive. </figcaption>
+	</figure>
+
+	<section id="tribute-info">
+		<h3 id="headline">Some important events about Steves Jobs life.</h3>
+		<ul>
+			<li><strong>1976</strong> - He founded Apple with Wozniak and Ronald Wayne.</li>
+			<li><strong>1977</strong> - This is when Apple is incorporated</li>
+			<li><strong>1980</strong> - Apple goes public and Jobs net worth at approximately $200,0000,000</li>
+			<li><strong>1986</strong> - Then buyss the company later to be named Pixar Animation Studios </li>
+      <li><strong>1995</strong> - He is named Pixar's president and CEO</li>
+      </ul>
+    	<figure id="img-div">
+		<img id="image" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT82MepkF6Pkt5FDiReTqEmd-ZlKK3H9NiCA&usqp=CAU== alt="Steve Jobs 1978 talkinf about apple products. ">
+		<figcaption id="img-caption">Steves Jobs in 1978 promoting apple </figcaption>
+	</figure>
+    <ul>
+      <li><strong>1996</strong> - He will comeback to Apple as Adviser</li>
+      <li><strong>1997</strong> - Then he will becomes CEO of Applee</li>
+      <li><strong>2001</strong> -  He will have the creation of the iPod</li>
+      <li><strong>2004</strong> - Has surgery to remove cancerous pancreatic tumore</li>
+      <li><strong>2007</strong> - The first iPhone is introduced</li>
+
+		</ul>
+	<figure id="img-div">
+		<img id="image" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSdwZ7FyS5uFNPA5eiSOvxEmT3XmhOhxyBg&usqp=CAU== alt="Steve Jobs holding the original I phone in his hand">
+		<figcaption id="img-caption">Steve Jobs showing off the original iphone.</figcaption>
+	</figure>
+    <main id="main">
+	<h2 id="title">More Information</h2>
+       <h4>
+      Here are some useful sites to find more information about Steve Jobs.
+    </h4>
+        <a
+        id="tribute-link"
+        href="https://en.wikipedia.org/wiki/Steve_Jobs"
+        target="_blank"
+        >Wikipedia</a
+      >
+      <a
+        id="tribute-link"
+        href="https://www.biography.com/business-figure/steve-jobs"
+        target="_blank"
+        >biography</a
+      >
+      <a
+        id="tribute-link"
+        href="https://www.britannica.com/biography/Steve-Jobs"
+        target="_blank"
+        >britannica</a
+      >
+      <a
+        id="tribute-link"
+        href="https://www.nytimes.com/2011/10/06/business/steve-jobs-of-apple-dies-at-56.html"
+        target="_blank"
+        >nytimes</a
+      >
+      <a
+        id="tribute-link"
+        href="https://www.cnbc.com/2021/05/27/steve-jobs-former-assistant-on-what-he-did-to-be-most-productive.html"
+        target="_blank"
+                 >cnbc</a
+      >
+      <a
+        id="tribute-link"
+        href="https://www.investopedia.com/articles/fundamental-analysis/12/steve-jobs-apple-story.asp"
+        target="_blank"
+                 >investopedia</a
+      >
+      
+     
+</main>
+</body>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
