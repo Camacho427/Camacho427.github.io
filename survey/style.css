@@ -1,0 +1,65 @@
+@font-face { url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+font-family: "Balsamiq Sans", cursive;
+}
+
+
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: Gold;
+}
+
+body {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: auto auto;
+  background: rgb(0, 0, 255);
+  width: 60%;
+  padding: 20px;
+  }
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: Black;
+}
+
+
+.form-box {
+  font-family: "Balsamiq Sans", cursive;
+  width: 98%;
+  padding: 5px;
+}
+.drop-down {
+  font-family: "Balsamiq Sans", cursive;
+  width: 100%;
+  padding: 5px;
+}
+
+label {
+  color: Black;
+}
+
+.textarea-box {
+  font-family: "Balsamiq Sans", cursive;
+  width: 98%;
+  align: center;
+  padding: 5px;
+}
+
+.submit-button {
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: bold;
+  width: 100%;
+  background-color: Gold;
+  padding: 5px;
+}
+
+
